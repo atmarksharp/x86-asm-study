@@ -11,7 +11,7 @@ _start:                         ;リンカに開始ポイントを伝える
         mov     eax,1           ;システムコール番号 (sys_exit)
         int     0x80            ;システムコール
 
-        section .data
+section .data
 
         msg     db      'Hello, world!',0xa       ;メッセージ文字列
         len     equ     $ - msg                  ;文字列の長さ

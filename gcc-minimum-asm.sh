@@ -5,7 +5,6 @@ command(){
   eval $1
 }
 
-
 if [ $# -lt 1 ]; then
   this=$(basename $0)
   echo "Usage: $this [path-to.c] ([entry-func])"
